@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside>
+        <h1>Font Filter</h1>
+        <div class="columns">
+                <div class="block">
+                    <h2>License</h2>
+                    <nav class="block__nav">
+                        <ul>
+                            <li> <span class="block__nav--checked"></span> <a href="">Desktop</a></li>
+                            <li><span></span> <a href="">Webfont</a></li>
+                            <li><span></span> <a href="">Ebook</a></li>
+                            <li><span></span> <a href="">Applications</a></li>
+                            <li><span></span> <a href="">OFL/Apache</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="block">
+                    <h2>Family size</h2>
+                    <nav class="block__nav">
+                        <ul>
+                            <li> <a href="">Any</a></li>
+                            <li> <a href="">4+Styles</a></li>
+                            <li> <a href="">8+Styles</a></li>
+                            <li> <a href="">12+Styles</a></li>
+                            <li> <a href="">Full Famillies</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="block">
+                    <h2>Downloads</h2>
+                    <nav class="block__nav">
+                        <ul>
+                            <li> <a href="">Show All</a></li>
+                            <li> <a href="">Local Only</a></li>
+                            <li> <a href="">Offsite Only</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="block">
+                    <h2>Sort by</h2>
+                    <nav class="block__nav">
+                        <ul>
+                            <li> <a href="">Alphabetical</a></li>
+                            <li> <a href="">Recent</a></li>
+                            <li> <a href="">Popular</a></li>
+                            <li> <a href="">Hot Today</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </aside>
+    <script>
+        function onClick(event) {
+            let li = event.target.closest('li');
+            if (!li) return;
+            console.log(li.fortsChild())
+        }
+    let block__nav = document.querySelectorAll('.block__nav')[0]
+    block__nav.addEventListener('click', onClick)
+</script>
+</body>
+</html>

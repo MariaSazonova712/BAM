@@ -10,63 +10,96 @@
 
 <body>
     <aside>
-        <h1>Font Filter</h1>
-        <div class="columns">
-                <div class="block">
-                    <h2>License</h2>
-                    <nav class="block__nav">
-                        <ul>
-                            <li> <span class="block__nav--checked"></span> <a href="">Desktop</a></li>
-                            <li><span></span> <a href="">Webfont</a></li>
-                            <li><span></span> <a href="">Ebook</a></li>
-                            <li><span></span> <a href="">Applications</a></li>
-                            <li><span></span> <a href="">OFL/Apache</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="block">
-                    <h2>Family size</h2>
-                    <nav class="block__nav">
-                        <ul>
-                            <li> <a href="">Any</a></li>
-                            <li> <a href="">4+Styles</a></li>
-                            <li> <a href="">8+Styles</a></li>
-                            <li> <a href="">12+Styles</a></li>
-                            <li> <a href="">Full Famillies</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="block">
-                    <h2>Downloads</h2>
-                    <nav class="block__nav">
-                        <ul>
-                            <li> <a href="">Show All</a></li>
-                            <li> <a href="">Local Only</a></li>
-                            <li> <a href="">Offsite Only</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="block">
-                    <h2>Sort by</h2>
-                    <nav class="block__nav">
-                        <ul>
-                            <li> <a href="">Alphabetical</a></li>
-                            <li> <a href="">Recent</a></li>
-                            <li> <a href="">Popular</a></li>
-                            <li> <a href="">Hot Today</a></li>
-                        </ul>
-                    </nav>
-                </div>
+        <div class="block">
+            <h1>Year</h1>
+            <div>
+                <ul>
+                    <li><span>2</span>Gb места</li>
+                    <li><span>2</span>сайта/ ftp акк.</li>
+                    <li><span>2</span>базы данных</li>
+                </ul>
             </div>
+            <div>
+                <p>Домен в подарок<br>при оплате за год:<br><span>.ru</span></p><br><br>
+            </div>
+            <div>
+                <p><span>3</span>резервных копии<br><span>стандартная</span><br>поддержка<br><span> 10 Гб</b> для почты
+                </p>
+            </div>
+            <div class="block__price">
+                <p>1 300 <span>руб./год</span></p>
+            </div>
+            <input type="button" value="РАЗМЕСТИТЬ САЙТ">
+        </div>
+        <div class="block block--orange">
+            <h1>Optimo</h1>
+            <div>
+                <ul>
+                    <li><span>4</span>Gb места</li>
+                    <li><span>5</span>сайта/ ftp акк.</li>
+                    <li><span>5</span>базы данных</li>
+                </ul>
+            </div>
+            <div>
+                <p>Домен в подарок<br>при оплате за год:<br><span>.ru</span></p><br><br>
+            </div>
+            <div>
+                <p><span>3</span>резервных копии<br><span>стандартная</span><br>поддержка<br><span> 10 Гб</span>для
+                    почты</p>
+            </div>
+            <div class="block__price">
+                <p>1 600 <span>руб./год</span></p>
+            </div>
+            <input type="button" value="РАЗМЕСТИТЬ САЙТ">
+        </div>
+        <div class="block">
+            <h1>Century</h1>
+            <div>
+                <ul>
+                    <li><span>6.4</span> Gb места</li>
+                    <li><span>10</span> сайтов/ftp акк.</li>
+                    <li><span>оо</span> баз данных</li>
+                </ul>
+            </div>
+            <div>
+                <p>Домен в подарок<br>при оплате за год:
+                    <br><span>.ru,.biz,.com,.info,<br>.name,.net,.org,<br>.us</span>
+                </p>
+            </div>
+            <div>
+                <p><span>3</span> резервных копии<br><span>стандартная</span><br>поддержка<br><span>10 Гб</span>для
+                    почты</p>
+            </div>
+            <div class="block__price">
+                <p>2 400 <span>руб./год</span></p>
+            </div>
+            <input type="button" value="РАЗМЕСТИТЬ САЙТ">
+        </div>
+        <div class="block">
+            <h1>Millennium</h1>
+            <div>
+                <ul>
+                    <li><span>12</span>Gb места</li>
+                    <li><span>20</span>сайтов/ftp акк.</li>
+                    <li><span>оо</span>баз данных</li>
+                </ul>
+            </div>
+            <div>
+                <p>Домен в подарок<br>при оплате за год:
+                    <br><span>.ru,.biz,.com,.info,<br>.name,.net,.org,<br>.us</span>
+                </p>
+            </div>
+            <div>
+                <p><span>3</span> резервных копии<br><span>стандартная</span><br>поддержка<br><span>10 Гб</span>для
+                    почты</p>
+            </div>
+            <div class="block__price">
+                <p>3 900 <span>руб./год</span></p>
+            </div>
+            <input type="button" value="РАЗМЕСТИТЬ САЙТ">
+        </div>
+        </div>
     </aside>
-    <script>
-        function onClick(event) {
-            let li = event.target.closest('li');
-            if (!li) return;
-            console.log(li.fortsChild())
-        }
-    let block__nav = document.querySelectorAll('.block__nav')[0]
-    block__nav.addEventListener('click', onClick)
-</script>
 </body>
+
 </html>

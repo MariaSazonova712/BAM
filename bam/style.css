@@ -5,46 +5,75 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
 }
+
 body {
     padding: 10px;
 }
+
 aside {
-   max-width: 380px;
-    background-color: #e5e5e5;
+    background-color: #dadada;
     padding: 20px;
+    display: flex;
+    width: 800px;
 }
-aside > h1 {
-font-size: 26px;
-background-color: #b4b4b4;
-color: #fff;
-padding: 16px;
-text-transform: uppercase;
-font-weight: 400;
+
+.block {
+    width: 190px;
+    padding-bottom: 20px;
 }
-.columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+
+h1 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-left: 15px;
 }
-.block h2 {
-text-transform: uppercase;
+
+.block--orange h1 {
+    color: rgb(240, 89, 89);
 }
-.block__nav li {
-list-style-type: none;
-margin-top: 6px;
-border-top: 1px solid #b4b4b4;
-padding-top: 3px;
+
+.block ul {
+    list-style: none;
+    margin-left: 15px;
+    margin-top: 20px;
+
 }
-.block__nav li a {
-    text-decoration: none;
+
+.block div {
+    border-top: solid 2px rgba(0, 0, 0, 0.071);
+    margin-bottom: 10px;
+
 }
-.block__nav--checked {
-    display: inline-block;
-    background-image: url('img/check.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 16px;
-    height: 16px;
-    margin-right: 6px;
+
+.block p {
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.block__price p {
+    font-size: 38px;
+    color: rgb(240, 89, 89);
+    margin-left: 5px;
+}
+
+.block span {
+    font-weight: 700;
+}
+
+.block input {
+    border-radius: 15px;
+    margin-left: 5px;
+    width: 160px;
+    height: 40px;
+    background-color: rgb(199, 189, 189);
+    border-color: rgb(199, 189, 189);
+    color: rgb(255, 255, 255);
+}
+
+.block--orange input {
+    background-color: #c25b41;
+}
+
+.block--orange {
+    background-color: rgb(245, 222, 222);
 }
